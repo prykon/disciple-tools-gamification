@@ -23,7 +23,7 @@ add_filter( 'dt_post_type_modules', function( $modules ){
         "enabled" => true,
         "locked" => true,
         "prerequisites" => [ "contacts_base" ],
-        "post_type" => "starter_post_type",
+        "post_type" => "gamification_post",
         "description" => "Default starter functionality"
     ];
 
@@ -31,7 +31,7 @@ add_filter( 'dt_post_type_modules', function( $modules ){
 }, 20, 1 );
 
 require_once 'module-base.php';
-Disciple_Tools_Plugin_Starter_Template_Base::instance();
+Disciple_Tools_Gamification_Base::instance();
 
 /**
  * @todo require_once and load additional modules
